@@ -1,8 +1,7 @@
 ---
 title: "Introduction to R and RStudio"
-author: ""
+author: " Waheeb Algabri"
 output:
-  pdf_document: default
   html_document:
     includes:
       in_header: header.html
@@ -11,6 +10,7 @@ output:
     theme: cerulean
     toc: true
     toc_float: true
+  pdf_document: default
 editor_options: 
   chunk_output_type: console
 ---
@@ -364,7 +364,7 @@ barplot(table(present$boys), main = "Counts of boys in present data")
 
 It seems that the counts in the present day data set are much larger than those in Arbuthnot's data set. The minimum, first quartile, median, mean, and third quartile values for both boy and girl births are all much higher in the present day data set. Additionally, the proportion of boys born is also slightly higher in the present day data set.
 
-Also according to the bar plot of both data sets i assume that the counts of present day birth records are likely to be much higher than Arbuthnot's data due to the increase in population over time. Also, it is worth noting that Arbuthnot's data is for baptisms which is a subset of births, so it might be smaller in size than present day birth records data.
+Also according to the bar plot of both data sets i assume that the counts of present day birth records are likely to be much higher than Arbuthnot's data due to the increase in population over time.
 
 
 6.  Make a plot that displays the proportion of boys born over time. What do you see? 
@@ -382,9 +382,8 @@ ggplot(data= present, aes(x=year, y=proportion_boys)) +
 
    
 The plot shows the proportion of boys over time in the U.S. data. 
-The plot shows that the proportion of boys born is consistently around 51%.
-Arbuthnot's observation that boys are born in greater proportion than girls does not hold up in the U.S. data
-    
+The plot shows that the proportion of boys born is consistently changing around 51% while in Arbuthnot's observation The proportion of boys born over time is fluctuating over time which mean that boys are born in greater proportion than girls does not hold in the U.S.
+
     
 7.  In what year did we see the most total number of births in the U.S.? *Hint:*
     First calculate the totals and save it as a new variable. Then, sort your
